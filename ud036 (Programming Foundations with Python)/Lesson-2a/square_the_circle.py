@@ -8,15 +8,28 @@ def main():
 def draw(window):
     t = build_turtle()
     length = 100
-    for color in ['red','blue','green','white']:
-        t.pencolor(color)
+    for i in xrange(0,5):
+      for x in xrange(0,4):
         t.forward(length)
         t.left(90)
+        swap_color(t)
+
+def swap_color(turtle):
+    colors = ['black', 'red','blue','green','white']
+
+    cur_color = turtle.pencolor()
+    cur_index = colors.index(cur_color)
+
+    if cur_index + 1 == len(colors):
+        turtle.pencolor(colors[0])
+    else:
+        turtle.pencolor(colors[cur_index + 1])
 
 def build_turtle():
     """ Pity the fool """
     mr_t = turtle.Turtle()
     mr_t.shape("blank")
+    mr_t.width(3)
     return mr_t
 
 def run_window(func):
