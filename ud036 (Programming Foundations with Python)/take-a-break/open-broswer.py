@@ -1,6 +1,8 @@
 import webbrowser
 import time
 
-time.sleep(10)
-webbrowser.open("http://www.youtube.com")
+for i in range(0,3):
+    time.sleep(3)
+    print("Take a break")
+    #webbrowser.open("http://www.youtube.com")
 
