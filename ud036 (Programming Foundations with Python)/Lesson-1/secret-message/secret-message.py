@@ -8,7 +8,9 @@ def rename_files():
 
     renamed = []
     for file in files:
-        renamed.append(stripnum(file))
+        newname = stripnum(file)
+        #os.rename(file, newname)
+        renamed.append(newname)
 
     for file in renamed:
         print(file)
