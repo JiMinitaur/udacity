@@ -8,13 +8,15 @@ def main():
 def draw(window):
     t = build_turtle()
     length = 100
-    for x in xrange(0,4):
+    for color in ['red','blue','green','white']:
+        t.pencolor(color)
         t.forward(length)
         t.left(90)
 
 def build_turtle():
     """ Pity the fool """
     mr_t = turtle.Turtle()
+    mr_t.shape("blank")
     return mr_t
 
 def run_window(func):
