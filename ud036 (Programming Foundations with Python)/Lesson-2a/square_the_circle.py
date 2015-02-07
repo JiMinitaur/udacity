@@ -10,11 +10,12 @@ def draw(window):
     t2 = build_turtle()
     t3 = build_turtle()        
     length = 100
-    for i in xrange(0,5):
+    for i in xrange(0,72):
         for x in xrange(0,4):
             t.forward(length)
             t.left(90)
             swap_color(t)
+        
         
         for x in xrange(0,3):
             t2.forward(length)
@@ -25,6 +26,9 @@ def draw(window):
             t3.forward(length)
             t3.left(120)
             swap_color(t3)
+
+        for turtle in [t,t2,t3]:
+            turtle.left(5)
 
 def swap_color(turtle):
     colors = ['black', 'red','blue','green','white']
@@ -42,6 +46,7 @@ def build_turtle():
     mr_t = turtle.Turtle()
     mr_t.shape("blank")
     mr_t.width(3)
+    mr_t.speed(100)
     return mr_t
 
 def run_window(func):
