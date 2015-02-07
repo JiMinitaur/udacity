@@ -19,14 +19,10 @@ class Movie:
     # Gets the canonical title of the property alias
     @staticmethod
     def deduce_prop(alias):
+        # Scan canonical properties for a match / alias and return key
         for key, value in Movie.property_aliases.iteritems():
-            if key == alias:
+            if key == alias or alias in value:
                 return key
-            else:
-                try:
-                    value.index(alias)
-                    return key
-                except:None
         print("!! property alias not found : "+alias)
         return None
 
@@ -40,19 +36,18 @@ class Movie:
 
     def set_prop(self, key, value):
         # The canonical key is used to set the value
-        # To prevent rogue entries and searching.
+        # to prevent rogue entries and searching.
         alias = Movie.deduce_prop(key)
         self.__props[alias] = value
     
     def __getattr__(self, prop):
-        # For unknown properties, if there is an alias,
+        # For unresolved properties, if there is an alias,
         # retrieve the value with the canonical key
         alias = Movie.deduce_prop(prop)
         if alias == None:
             return None
         else:
             return self.__props[alias]
-
 
     def __str__(self):
         # Get the string description of the dynamic property container.

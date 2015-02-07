@@ -2,15 +2,9 @@ from movies import Movie
 import fresh_tomatoes
 import json
 
+# Because I used a single property map for the constructor parameter,
+# The constructor function can be used as the JSON processing callback.
 with open("movies.json") as datafile:
-    json_data = json.load(datafile)
-
-print json_data
-
-movies = []
-for movie in json_data:
-    movies.append(Movie(movie))
-
-print (movie)
+    movies = json.load(datafile, object_hook=Movie)
 
 fresh_tomatoes.open_movies_page(movies)
