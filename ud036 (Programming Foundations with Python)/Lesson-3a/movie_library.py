@@ -1,15 +1,16 @@
 from movies import Movie
 import fresh_tomatoes
+import json
 
-toystory = Movie({
-    'title' : "Toy Story",
-    'story' :
-"""Adults cry with their children, as inanimate
- objects experience love, adventure, and heartbreak.
-""",
-    'poster' : "http://cdnvideo.dolimg.com/cdn_assets/5670999ffe25e4bd664bc9486adef5171a494e7f.jpg",
-    'trailer' : "http://youtu.be/KYz2wyBy3kc"
-    })
+with open("movies.json") as datafile:
+    json_data = json.load(datafile)
 
+print json_data
 
-fresh_tomatoes.open_movies_page([toystory])
+movies = []
+for movie in json_data:
+    movies.append(Movie(movie))
+
+print (movie)
+
+fresh_tomatoes.open_movies_page(movies)

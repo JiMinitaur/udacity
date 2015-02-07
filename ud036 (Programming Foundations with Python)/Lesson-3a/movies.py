@@ -6,7 +6,7 @@ class Movie:
     # while ensuring that only the expected properties are included.
     property_aliases = {
         'title' : ['name', 'id']
-    ,   'storyline' : ['story', 'description']
+    ,   'storyline' : ['story', 'description', 'plot']
     ,   'poster_link' : ['poster', 'poster_image_url']
     ,   'trailer_link' : ['trailer', 'youtube', 'trailer_youtube_url']
     }
