@@ -7,12 +7,24 @@ def main():
 
 def draw(window):
     t = build_turtle()
+    t2 = build_turtle()
+    t3 = build_turtle()        
     length = 100
     for i in xrange(0,5):
-      for x in xrange(0,4):
-        t.forward(length)
-        t.left(90)
-        swap_color(t)
+        for x in xrange(0,4):
+            t.forward(length)
+            t.left(90)
+            swap_color(t)
+        
+        for x in xrange(0,3):
+            t2.forward(length)
+            t2.right(60)
+            swap_color(t2)
+
+        for x in xrange(0,3):
+            t3.forward(length)
+            t3.left(120)
+            swap_color(t3)
 
 def swap_color(turtle):
     colors = ['black', 'red','blue','green','white']
