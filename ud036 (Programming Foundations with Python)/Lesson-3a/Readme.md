@@ -3,7 +3,7 @@
 
 ### Overview
 
-Having extensive background in programming, but little in Python, I decided to integrate cleaner and more modular paradigms into the assignment, and get familiar with common activities using Python in particular.
+Having extensive background in programming, but little in Python, I decided to integrate cleaner and more modular paradigms into the assignment, and get familiar with the Python equivalent of common APIs and design patterns.
 
 Key aspects of this implementation:
 
@@ -20,6 +20,6 @@ Key aspects of this implementation:
 
 ### Usage
 
-Simply run `movie_library.py`.  It will process the data from `movies.json` and feed it `fresh_tomatoes.py`, which it turns will render the page and open it in a web browser.
+Simply run `movie_library.py`.  It will process the data from `movies.json` and feed it `fresh_tomatoes.py`, which in turn will render the page and open it in a web browser.
 
 
