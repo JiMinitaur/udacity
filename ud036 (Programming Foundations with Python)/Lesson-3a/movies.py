@@ -2,13 +2,13 @@ import webbrowser
 
 class Movie:
 
-    # Property aliases provide flexibility when defining the data,
+    # Property aliases provide flexibility during get/set operations,
     # while ensuring that only the expected properties are included.
     property_aliases = {
         'title' : ['name', 'id']
     ,   'storyline' : ['story', 'description']
-    ,   'poster_link' : ['poster']
-    ,   'trailer_link' : ['trailer', 'youtube']
+    ,   'poster_link' : ['poster', 'poster_image_url']
+    ,   'trailer_link' : ['trailer', 'youtube', 'trailer_youtube_url']
     }
 
     # Gets the list of canonical property titles

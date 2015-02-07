@@ -1,4 +1,5 @@
 from movies import Movie
+import fresh_tomatoes
 
 toystory = Movie({
     'title' : "Toy Story",
@@ -10,12 +11,5 @@ toystory = Movie({
     'trailer' : "http://youtu.be/KYz2wyBy3kc"
     })
 
-print(Movie.list_props())
 
-#test canonical property id
-print(toystory.storyline)
-
-#Test alias property id
-print(toystory.trailer)
-
-toystory.show_trailer()
+fresh_tomatoes.open_movies_page([toystory])
