@@ -13,19 +13,19 @@
 	,	"story"	:	"Bruce Willis only speaks two languages: English, and Bad English."
 	,	"poster"	: "http://ia.media-imdb.com/images/M/MV5BMTkzOTkwNTI4N15BMl5BanBnXkFtZTYwMDIzNzI5._V1_SX640_SY720_.jpg"
 
-	,	"trailer"	:	"http://youtu.be/VkX7dHjL-aY"
+	,	"youtube"	:	"http://youtu.be/VkX7dHjL-aY"
 	}
 ,
 {
 		"title"	:	"Black Swan"
-	,	"story"	:	"Natalie Portman blows the audiances mind in her quest to perfection."
-	,	"poster"	: "http://ia.media-imdb.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SX640_SY720_.jpg"
+	,	"description"	:	"Natalie Portman blows the audiences mind as her quest for perfection wrestles with her sanity."
+	,	"poster_link"	: "http://ia.media-imdb.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SX640_SY720_.jpg"
 	,	"trailer"	:	"http://youtu.be/5jaI1XOB-bs"
 }
 ,
 {
 		"title"	:	"Akira"
-	,	"story"	:	"A young biker gang member in neo-tokyo gets in over his head with government pyshic evolution program."
+	,	"story"	:	"A young biker gang member in Neo-Tokyo gets in over his head, when a run-in with a government pyshic evolution program leads to his capture."
 	,	"poster"	: "http://upload.wikimedia.org/wikipedia/en/5/5d/AKIRA_%281988_poster%29.jpg"
 	,	"trailer"	:	"http://youtu.be/7G5zQW4TinQ"
 }

@@ -7,4 +7,6 @@ import json
 with open("movies.json") as datafile:
     movies = json.load(datafile, object_hook=Movie)
 
+print(movies)
+
 fresh_tomatoes.open_movies_page(movies)

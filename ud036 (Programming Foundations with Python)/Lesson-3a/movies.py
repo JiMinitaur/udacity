@@ -23,7 +23,8 @@ class Movie:
         for key, value in Movie.property_aliases.iteritems():
             if key == alias or alias in value:
                 return key
-        print("!! property alias not found : "+alias)
+        if not(alias.startswith("__")):
+            print("!! property alias not found : "+alias)
         return None
 
 
@@ -45,9 +46,14 @@ class Movie:
         # retrieve the value with the canonical key
         alias = Movie.deduce_prop(prop)
         if alias == None:
-            return None
+             raise AttributeError, prop
         else:
             return self.__props[alias]
+
+    def __repr__(self):
+        # Provides short debug string.
+        # Core collection types rely on this internally
+        return "Movie("+self.title+")"
 
     def __str__(self):
         # Get the string description of the dynamic property container.
