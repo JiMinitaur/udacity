@@ -16,7 +16,6 @@ def draw(window):
             t.left(90)
             swap_color(t)
         
-        
         for x in xrange(0,3):
             t2.forward(length)
             t2.right(60)
