@@ -1,3 +1,5 @@
+import webbrowser
+
 class Movie:
 
     # Property aliases provide flexibility when defining the data,
@@ -55,3 +57,8 @@ class Movie:
     def __str__(self):
         # Get the string description of the dynamic property container.
         return str(self.__props)
+
+    def show_trailer(self):
+        trailer = self.trailer
+        print("Playing trailer: " + trailer)
+        webbrowser.open(trailer)
