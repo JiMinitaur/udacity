@@ -3,9 +3,10 @@
 # 
 
 import time
+import psycopg2
 
 ## Database connection
-DB = []
+DB = psycopg2.connect("dbname=forum")
 
 ## Get posts from database.
 def GetAllPosts():
@@ -16,9 +17,9 @@ def GetAllPosts():
       pointing to the post content, and 'time' key pointing to the time
       it was posted.
     '''
-    posts = [{'content': str(row[1]), 'time': str(row[0])} for row in DB]
-    posts.sort(key=lambda row: row['time'], reverse=True)
-    return posts
+    c = DB.cursor()
+    c.execute("Select * from posts order by time desc")
+    return c.fetchall()
 
 ## Add a post to the database.
 def AddPost(content):
@@ -28,4 +29,5 @@ def AddPost(content):
       content: The text content of the new post.
     '''
     t = time.strftime('%c', time.localtime())
-    DB.append((t, content))
+    cursor = DB.execute("insert into posts(content, current_timestamp)")
+    DB.commit()
