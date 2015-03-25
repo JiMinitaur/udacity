@@ -25,8 +25,9 @@ While the value of these points is debatable, and I'd be willing to look past th
 
   The initial credit card used to sign up turned out to be over it's limit.  I had borrowed this card from a parent, because I wouldn't have the money myself for several weeks.  The system would not let me remove the card while I was enrolled.  The only options I had were to cancel my enrollement or change my card.  I cancelled my enrolment, and was told I would be unenrolled at the end of the billing period.  I was not allowed to cancel my cancel.  At this point my only option was to change my card.
   
-  Despite email complaints and request for removal of the service, the system continued to attempt to charge the card every few days.  If I had used a debit card, I would have incurred hundreds of dollars in overdraft fees, a point I noted in my email complaint.  I maintain, as I suggested in my email, that considering the potential for crippling financial effects, holding invalid payment data hostage like this is unethical.   I finally swapped the number with a ten dollar prepaid card. 
+  Despite email complaints and request for removal of the service, the system continued to attempt to charge the card every few days.  If I had used a debit card, I would have incurred hundreds of dollars in overdraft fees, a point I noted in my email complaint.  I maintain, as I suggested in my email, that considering the potential for crippling financial effects, holding invalid payment data hostage like this is unethical.   
   
+  At this point, I had resigned to quit the program, and was worried that my parents would be charged when they payed off their card.  I finally swapped the number with a ten dollar prepaid card, to prevent further charge attempts from being a liability.
 
 ## Review Synopsis.
 
